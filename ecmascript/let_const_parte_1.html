@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // escopos: global, função e bloco
+
+        var serie = 'The Big Bang Theory'
+        console.log('global: ', serie)
+
+        function escopoFuncao() {
+            console.log('function: ', serie)
+        }
+
+        escopoFuncao() 
+        {
+            
+            if(true){
+                console.log('bloco:', serie)
+            }
+        }
+
+        {
+
+        }
+    </script>
+</body>
+</html>

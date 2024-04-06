@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <script>
+
+            function* conversar() {
+                /*console.log('comando 1')
+                console.log('comando 2')
+                console.log('comando 3')
+        
+                let opcao = yield 'E aí, tudo bem ? '
+                
+                console.log('comando 4')
+                console.log('comando 5')
+                console.log(opcao)
+
+                //parametro enviado no next
+                
+
+                yield 'terceira etapa' + opcao */
+                yield 'ótimo, fico feliz'
+
+            }
+
+            let conversa = conversar() //objeto iterador
+            
+            let iteracao = conversa.next() //
+            console.log(iteracao)
+
+            iteracao = conversa.next('sim') //
+            console.log(iteracao)
+
+        </script>
+
+        <div id="teste">
+            <button type="button" onclick="acao()">Avançar</button>
+            Resposta: <input type="text" id="resposta">
+        </div>
+    </body>
+</html>
